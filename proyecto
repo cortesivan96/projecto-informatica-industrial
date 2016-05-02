@@ -9,19 +9,23 @@ int random(){
 }
 
 int prender (int n){
+
   if (n==1){
     printf("led1");
   }
+
   if (n==2){
    printf("led2");
   }
+
   if (n==3){
    printf("led3");
-
   }
+
   if (n==4){
     printf("led4");
   }
+
   return 0;
 }
 
@@ -29,27 +33,35 @@ int prender (int n){
 int main(){
   int numPresionado,n;
   n = random();
-  prender(&n);
+  prender(n);
   printf("\n presiona el numero del led\n");
 
   scanf("%i",&numPresionado);
-  numPresionado=n;
-    if(numPresionado=n){
+
+    if(numPresionado==n){
+
       if(numPresionado==1){
         printf("led1");
       }
+
       if(numPresionado==2){
         printf("led2");
       }
+
       if(numPresionado==3){
         printf("led3");
       }
+
       if(numPresionado==4){
         printf("led4");
       }
+}
     else{
         printf("error");
     }
+      return 0;
+}
+
 
       return 0;
     }
